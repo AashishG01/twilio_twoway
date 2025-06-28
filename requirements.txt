@@ -1,0 +1,6 @@
+flask
+twilio
+python-dotenv
+fastapi
+uvicorn
+python-multipart

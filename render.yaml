@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fastapi-twilio-backend
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: ""
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_WHATSAPP_FROM
+        sync: false
